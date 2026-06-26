@@ -1,4 +1,5 @@
 ---
+import ToolFooter from "../components/ToolFooter.astro";
 import '../styles/app.css';
 
 const title = 'lilInspect - Media Metadata Inspector';
@@ -102,9 +103,7 @@ const description =
       </section>
     </main>
 
-    <footer class="app-footer">
-      <span>Made with <span class="app-footer__heart" aria-hidden="true">&#9829;</span> by <a href="https://lilagents.com" target="_blank" rel="noopener">lilAgents</a> &middot; Your files talk. Know what they say.</span>
-    </footer>
+    <ToolFooter repoUrl="https://github.com/lilAgents/lilinspect" />
 
     <script>
       import { initInspect } from '../scripts/inspect.js';
