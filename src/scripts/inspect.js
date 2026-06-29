@@ -158,7 +158,7 @@ function gpsSection(gps) {
   const la = gps.lat.toFixed(6), lo = gps.lon.toFixed(6);
   const rows = [
     { k: 'Coordinates', v: la + ', ' + lo, warn: true },
-    { k: 'Map', html: `<a href="https://www.openstreetmap.org/?mlat=${la}&amp;mlon=${lo}#map=15/${la}/${lo}" target="_blank" rel="noopener">View this spot on OpenStreetMap</a>`, warn: true },
+    { k: 'Map', html: `<a href="https://www.openstreetmap.org/?mlat=${la}&amp;mlon=${lo}#map=15/${la}/${lo}" target="_blank">View this spot on OpenStreetMap</a>`, warn: true },
   ];
   if (gps.alt) rows.splice(1, 0, { k: 'Altitude', v: gps.alt, warn: true });
   return { title: 'Location', rows };
